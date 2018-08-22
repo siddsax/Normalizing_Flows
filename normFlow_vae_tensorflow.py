@@ -116,7 +116,7 @@ z_mu, z_logvar = Q(X)
 z_sample = sample_z(z_mu, z_logvar)
 logdet_jacobian = 0
 
-for i in range(4):
+for i in range(num_flows):
     u.append(tf.Variable(xavier_init([z_dim,1]),name=("U_"+str(i))))
     w.append(tf.Variable(xavier_init([z_dim,1]),name=("V_"+str(i))))
     b.append(tf.Variable(xavier_init([1,1]))) #scalar
