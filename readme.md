@@ -1,12 +1,32 @@
-# Code base for normalizing flows using python and tensorflow
+# MNIST Digit Generation with Normalizing flows 
 
-Implemented by Siddhartha Saxena, Jaivardhan Kapoor and Shibhansh Dohare. Course project of Bayesian Machine Learning 2016-17 Sem 2. Extending the work of Rezende et al.  
-
-The file normFlow_vae_tensorflow runs a Variational Auto-encoder which has a much more flexible posterior distribution as compared to vanilla vae. It takes MNIST as default-input 
+<p float="left">
+  <img src="/Original_10Lkh.png" width="400" />
+  <img src="/10LkhIter_4Flows.png" width="400" height="300"/> 
+  <figcaption>a 2D Latent Vector Representation, Left is vanilla VAE, Right is with Normalizing flows. As can be seen, the one with normalizing flows has a flexible multi-modal distribution, opposed to unimodal gaussian for vanilla vae</figcaption>
+</p>
+This code base implements Normalizing Flows as proposed in Rezende et al. to generate MNIST digits using Tensorflow. 
 
 Usage:
 ```bash
-python normFlow_vae_tensorflow.py [plot_or_not] [number of flows]
+python main.py [plot_or_not] [number of flows]
 ```
 
-Output : 10 files with latent states of each number, 1 file with combined latent states, and a graph plotting them if plot_or_not=1. Out folder contains samples of generations after each 100
+No need to download MNIST, tensorflow does it for you!
+
+Outputs
+* 10 files with latent states of each number
+* 1 file with combined latent states 
+* Graph plotting latent states as in the diagram if plot_or_not=1
+* Folder names Out is generated containing samples of generations after interval of 100 iterations
+
+If you use the code base, please cite us at 
+
+```bash
+@article{saxena2017variational,
+  title={Variational Inference via Transformations on Distributions},
+  author={Saxena, Siddhartha and Dohare, Shibhansh and Kapoor, Jaivardhan},
+  journal={arXiv preprint arXiv:1707.02510},
+  year={2017}
+}
+```
