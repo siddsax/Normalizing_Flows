@@ -3,7 +3,7 @@
 <p float="left">
   <img src="/Original_10Lkh.png" width="400" />
   <img src="/10LkhIter_4Flows.png" width="400" height="300"/> 
-  <figcaption>a 2D Latent Vector Representation, Left is vanilla VAE, Right is with Normalizing flows. As can be seen, the one with normalizing flows has a flexible multi-modal distribution, opposed to unimodal gaussian for vanilla vae</figcaption>
+  <figcaption>2D Latent Vector Representation, Left is vanilla VAE, Right is with Normalizing flows. As can be seen, the one with normalizing flows has a flexible multi-modal distribution, opposed to unimodal gaussian for vanilla vae</figcaption>
 </p>
 This code base implements Normalizing Flows as proposed in Rezende et al. to generate MNIST digits using Tensorflow. 
 
