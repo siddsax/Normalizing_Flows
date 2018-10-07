@@ -1,4 +1,4 @@
-# MNIST Digit Generation with Normalizing flows 
+# Normalizing flows to generate MNIST Digits  
 
 <p float="left">
   <img src="/Original_10Lkh.png" width="400" />
