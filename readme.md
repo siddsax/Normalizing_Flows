@@ -1,10 +1,10 @@
 # Normalizing flows to generate MNIST Digits  
 
-<p float="left">
-  <img src="/Original_10Lkh.png" width="400" />
-  <img src="/10LkhIter_4Flows.png" width="400" height="300"/> 
-  <figcaption>2D Latent Vector Representation, Left is vanilla VAE, Right is with Normalizing flows. As can be seen, the one with normalizing flows has a flexible multi-modal distribution, opposed to unimodal gaussian for vanilla vae</figcaption>
+<p align="center">
+  <img src="https://github.com/siddsax/Normalizing_Flows/blob/master/NF.jpg">
 </p>
+
+
 This code base implements Normalizing Flows as proposed in Rezende et al. to generate MNIST digits using Tensorflow. 
 
 Usage:
@@ -19,6 +19,13 @@ Outputs
 * 1 file with combined latent states 
 * Graph plotting latent states as in the diagram if plot_or_not=1
 * Folder names Out is generated containing samples of generations after interval of 100 iterations
+
+<p float="left">
+  <img src="/Original_10Lkh.png" width="400" />
+  <img src="/10LkhIter_4Flows.png" width="400" height="300"/> 
+  <figcaption>2D Latent Vector Representation, Left is vanilla VAE, Right is with Normalizing flows. As can be seen, the one with normalizing flows has a flexible multi-modal distribution, opposed to unimodal gaussian for vanilla vae</figcaption>
+</p>
+
 
 If you use the code base, please cite us at 
 
